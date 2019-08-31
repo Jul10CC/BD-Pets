@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="e1b63c8ef2e248ee86225d04a5024ede" Name="Diagram1">
+        <EntityTypeShape EntityType="PetsJCModel.Cargo" Width="1.5" PointX="0.75" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="PetsJCModel.CategoriaProductos" Width="1.5" PointX="3.75" PointY="15.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="PetsJCModel.Cliente" Width="1.5" PointX="3.75" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="PetsJCModel.Detalle" Width="1.5" PointX="8.25" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="PetsJCModel.DetalleMetodoPago" Width="1.5" PointX="8.25" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="PetsJCModel.Empleado" Width="1.5" PointX="0.75" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="PetsJCModel.EmpleadoCargo" Width="1.5" PointX="3" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="PetsJCModel.Factura" Width="1.5" PointX="6" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="PetsJCModel.Inventario" Width="1.5" PointX="8.25" PointY="15.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="PetsJCModel.ModoPago" Width="1.5" PointX="6" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="PetsJCModel.Productos" Width="1.5" PointX="6" PointY="15.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="PetsJCModel.Usuario" Width="1.5" PointX="3" PointY="12.125" IsExpanded="true" />
+        <AssociationConnector Association="PetsJCModel.Relationship11" ManuallyRouted="false" />
+        <AssociationConnector Association="PetsJCModel.Relationship3" ManuallyRouted="false" />
+        <AssociationConnector Association="PetsJCModel.Relationship6" ManuallyRouted="false" />
+        <AssociationConnector Association="PetsJCModel.Relationship4" ManuallyRouted="false" />
+        <AssociationConnector Association="PetsJCModel.Relationship5" ManuallyRouted="false" />
+        <AssociationConnector Association="PetsJCModel.Relationship14" ManuallyRouted="false" />
+        <AssociationConnector Association="PetsJCModel.Relationship15" ManuallyRouted="false" />
+        <AssociationConnector Association="PetsJCModel.Relationship12" ManuallyRouted="false" />
+        <AssociationConnector Association="PetsJCModel.Relationship13" ManuallyRouted="false" />
+        <AssociationConnector Association="PetsJCModel.Relationship9" ManuallyRouted="false" />
+        <AssociationConnector Association="PetsJCModel.Relationship16" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
