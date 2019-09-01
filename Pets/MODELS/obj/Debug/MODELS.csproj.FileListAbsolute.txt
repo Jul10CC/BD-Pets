@@ -1,0 +1,12 @@
+E:\Universidad Mesoamericana\Sexto Semestre\Base de Datos II\Proyecto Final\GitHub\BD-Pets\Pets\MODELS\bin\Debug\MODELS.dll.config
+E:\Universidad Mesoamericana\Sexto Semestre\Base de Datos II\Proyecto Final\GitHub\BD-Pets\Pets\MODELS\bin\Debug\MODELS.dll
+E:\Universidad Mesoamericana\Sexto Semestre\Base de Datos II\Proyecto Final\GitHub\BD-Pets\Pets\MODELS\bin\Debug\MODELS.pdb
+E:\Universidad Mesoamericana\Sexto Semestre\Base de Datos II\Proyecto Final\GitHub\BD-Pets\Pets\MODELS\bin\Debug\EntityFramework.dll
+E:\Universidad Mesoamericana\Sexto Semestre\Base de Datos II\Proyecto Final\GitHub\BD-Pets\Pets\MODELS\bin\Debug\EntityFramework.SqlServer.dll
+E:\Universidad Mesoamericana\Sexto Semestre\Base de Datos II\Proyecto Final\GitHub\BD-Pets\Pets\MODELS\bin\Debug\EntityFramework.xml
+E:\Universidad Mesoamericana\Sexto Semestre\Base de Datos II\Proyecto Final\GitHub\BD-Pets\Pets\MODELS\bin\Debug\EntityFramework.SqlServer.xml
+E:\Universidad Mesoamericana\Sexto Semestre\Base de Datos II\Proyecto Final\GitHub\BD-Pets\Pets\MODELS\obj\Debug\MODELS.csprojAssemblyReference.cache
+E:\Universidad Mesoamericana\Sexto Semestre\Base de Datos II\Proyecto Final\GitHub\BD-Pets\Pets\MODELS\obj\Debug\MODELS.csproj.CoreCompileInputs.cache
+E:\Universidad Mesoamericana\Sexto Semestre\Base de Datos II\Proyecto Final\GitHub\BD-Pets\Pets\MODELS\obj\Debug\MODELS.csproj.CopyComplete
+E:\Universidad Mesoamericana\Sexto Semestre\Base de Datos II\Proyecto Final\GitHub\BD-Pets\Pets\MODELS\obj\Debug\MODELS.dll
+E:\Universidad Mesoamericana\Sexto Semestre\Base de Datos II\Proyecto Final\GitHub\BD-Pets\Pets\MODELS\obj\Debug\MODELS.pdb
