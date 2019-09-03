@@ -31,3 +31,7 @@ E:\Universidad Mesoamericana\Sexto Semestre\Base de Datos II\Proyecto Final\GitH
 E:\Universidad Mesoamericana\Sexto Semestre\Base de Datos II\Proyecto Final\GitHub\BD-Pets\Pets\UI\obj\Debug\UI.csproj.CopyComplete
 E:\Universidad Mesoamericana\Sexto Semestre\Base de Datos II\Proyecto Final\GitHub\BD-Pets\Pets\UI\obj\Debug\UI.exe
 E:\Universidad Mesoamericana\Sexto Semestre\Base de Datos II\Proyecto Final\GitHub\BD-Pets\Pets\UI\obj\Debug\UI.pdb
+E:\Universidad Mesoamericana\Sexto Semestre\Base de Datos II\Proyecto Final\GitHub\BD-Pets\Pets\UI\obj\Debug\Mantenimientos\UserControlCliente.g.cs
+E:\Universidad Mesoamericana\Sexto Semestre\Base de Datos II\Proyecto Final\GitHub\BD-Pets\Pets\UI\obj\Debug\Mantenimientos\UserControlEmpleado.g.cs
+E:\Universidad Mesoamericana\Sexto Semestre\Base de Datos II\Proyecto Final\GitHub\BD-Pets\Pets\UI\obj\Debug\Mantenimientos\UserControlProductos.g.cs
+E:\Universidad Mesoamericana\Sexto Semestre\Base de Datos II\Proyecto Final\GitHub\BD-Pets\Pets\UI\obj\Debug\Mantenimientos\UserControlUsuario.g.cs

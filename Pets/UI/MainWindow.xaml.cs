@@ -39,7 +39,7 @@ namespace UI
         private void MoverPestaña(int opcion_seleccionada)
         {
             TrainsitionigContentSlide.OnApplyTemplate(); GridCursor.Margin = new Thickness(0, (150 + (60 * opcion_seleccionada)),
-0, 0);
+        0, 0);
         }
         private void ButtonOpenMenu_Click(object sender, RoutedEventArgs e) { ButtonCloseMenu.Visibility = Visibility.Visible; ButtonOpenMenu.Visibility = Visibility.Collapsed; }
         private void ButtonCloseMenu_Click(object sender, RoutedEventArgs e) { ButtonCloseMenu.Visibility = Visibility.Collapsed; ButtonOpenMenu.Visibility = Visibility.Visible; }

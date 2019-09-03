@@ -112,15 +112,15 @@ ScrollViewer.HorizontalScrollBarVisibility="Disabled" SelectedIndex="0"
 ScrollViewer.VerticalScrollBarVisibility="Disabled">
                 <ListViewItem Height="60">
                     <StackPanel Orientation="Horizontal">
-                        <materialDesign:PackIcon Kind="Home" Width="30" Height="30"
-VerticalAlignment="Center" Margin="5"/>
+                        <materialDesign:PackIcon Kind="Store" Width="30" Height="30"
+VerticalAlignment="Center" Margin="5" RenderTransformOrigin="0.927,0.707"/>
                         <TextBlock Text="Inicio" FontSize="17"
 VerticalAlignment="Center" Margin="20 0"/>
                     </StackPanel>
                 </ListViewItem>
                 <ListViewItem Height="60">
                     <StackPanel Orientation="Horizontal">
-                        <materialDesign:PackIcon Kind="AccountCardDetails"
+                        <materialDesign:PackIcon Kind="AssignmentInd"
 Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
                         <TextBlock Text="Opción 1" FontSize="17"
 VerticalAlignment="Center" Margin="20 0"/>
@@ -128,7 +128,7 @@ VerticalAlignment="Center" Margin="20 0"/>
                 </ListViewItem>
                 <ListViewItem Height="60">
                     <StackPanel Orientation="Horizontal">
-                        <materialDesign:PackIcon Kind="AccessPointNetwork"
+                        <materialDesign:PackIcon Kind="Person"
 Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
                         <TextBlock Text="Opción 2" FontSize="17"
 VerticalAlignment="Center" Margin="20 0"/>
@@ -136,7 +136,7 @@ VerticalAlignment="Center" Margin="20 0"/>
                 </ListViewItem>
                 <ListViewItem Height="60">
                     <StackPanel Orientation="Horizontal">
-                        <materialDesign:PackIcon Kind="TruckDelivery" Width="30"
+                        <materialDesign:PackIcon Kind="PersonAdd" Width="30"
 Height="30" VerticalAlignment="Center" Margin="5"/>
                         <TextBlock Text="Entrega" FontSize="17"
 VerticalAlignment="Center" Margin="20 0"/>
@@ -144,7 +144,7 @@ VerticalAlignment="Center" Margin="20 0"/>
                 </ListViewItem>
                 <ListViewItem Height="60">
                     <StackPanel Orientation="Horizontal">
-                        <materialDesign:PackIcon Kind="Cash" Width="30" Height="30"
+                        <materialDesign:PackIcon Kind="Pets" Width="30" Height="30"
 VerticalAlignment="Center" Margin="5"/>
                         <TextBlock Text="Pagos" FontSize="17"
 VerticalAlignment="Center" Margin="20 0"/>
@@ -152,7 +152,7 @@ VerticalAlignment="Center" Margin="20 0"/>
                 </ListViewItem>
                 <ListViewItem Height="60">
                     <StackPanel Orientation="Horizontal">
-                        <materialDesign:PackIcon Kind="AccountStar" Width="30"
+                        <materialDesign:PackIcon Kind="Refresh" Width="30"
 Height="30" VerticalAlignment="Center" Margin="5"/>
                         <TextBlock Text="Clientes" FontSize="17"
 VerticalAlignment="Center" Margin="20 0"/>

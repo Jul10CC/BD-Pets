@@ -80,14 +80,35 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Mantenimientos\UserControl1.xaml">
+    <Page Include="Mantenimientos\UserControlCliente.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Mantenimientos\UserControlEmpleado.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Mantenimientos\UserControlProductos.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Mantenimientos\UserControlUsuario.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Mantenimientos\UserControl1.xaml.cs">
-      <DependentUpon>UserControl1.xaml</DependentUpon>
+    <Compile Include="Mantenimientos\UserControlCliente.xaml.cs">
+      <DependentUpon>UserControlCliente.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientos\UserControlEmpleado.xaml.cs">
+      <DependentUpon>UserControlEmpleado.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientos\UserControlProductos.xaml.cs">
+      <DependentUpon>UserControlProductos.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientos\UserControlUsuario.xaml.cs">
+      <DependentUpon>UserControlUsuario.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
