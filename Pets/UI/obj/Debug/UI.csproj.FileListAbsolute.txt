@@ -1,6 +1,5 @@
 E:\Universidad Mesoamericana\Sexto Semestre\Base de Datos II\Proyecto Final\GitHub\BD-Pets\Pets\UI\obj\Debug\UI.csprojAssemblyReference.cache
 E:\Universidad Mesoamericana\Sexto Semestre\Base de Datos II\Proyecto Final\GitHub\BD-Pets\Pets\UI\obj\Debug\MainWindow.g.cs
-E:\Universidad Mesoamericana\Sexto Semestre\Base de Datos II\Proyecto Final\GitHub\BD-Pets\Pets\UI\obj\Debug\Mantenimientos\UserControl1.g.cs
 E:\Universidad Mesoamericana\Sexto Semestre\Base de Datos II\Proyecto Final\GitHub\BD-Pets\Pets\UI\obj\Debug\App.g.cs
 E:\Universidad Mesoamericana\Sexto Semestre\Base de Datos II\Proyecto Final\GitHub\BD-Pets\Pets\UI\obj\Debug\UI_MarkupCompile.cache
 E:\Universidad Mesoamericana\Sexto Semestre\Base de Datos II\Proyecto Final\GitHub\BD-Pets\Pets\UI\obj\Debug\UI_MarkupCompile.lref
@@ -23,7 +22,6 @@ E:\Universidad Mesoamericana\Sexto Semestre\Base de Datos II\Proyecto Final\GitH
 E:\Universidad Mesoamericana\Sexto Semestre\Base de Datos II\Proyecto Final\GitHub\BD-Pets\Pets\UI\bin\Debug\MaterialDesignThemes.Wpf.xml
 E:\Universidad Mesoamericana\Sexto Semestre\Base de Datos II\Proyecto Final\GitHub\BD-Pets\Pets\UI\obj\Debug\App.baml
 E:\Universidad Mesoamericana\Sexto Semestre\Base de Datos II\Proyecto Final\GitHub\BD-Pets\Pets\UI\obj\Debug\MainWindow.baml
-E:\Universidad Mesoamericana\Sexto Semestre\Base de Datos II\Proyecto Final\GitHub\BD-Pets\Pets\UI\obj\Debug\Mantenimientos\UserControl1.baml
 E:\Universidad Mesoamericana\Sexto Semestre\Base de Datos II\Proyecto Final\GitHub\BD-Pets\Pets\UI\obj\Debug\UI.g.resources
 E:\Universidad Mesoamericana\Sexto Semestre\Base de Datos II\Proyecto Final\GitHub\BD-Pets\Pets\UI\obj\Debug\UI.Properties.Resources.resources
 E:\Universidad Mesoamericana\Sexto Semestre\Base de Datos II\Proyecto Final\GitHub\BD-Pets\Pets\UI\obj\Debug\UI.csproj.GenerateResource.cache
@@ -35,3 +33,14 @@ E:\Universidad Mesoamericana\Sexto Semestre\Base de Datos II\Proyecto Final\GitH
 E:\Universidad Mesoamericana\Sexto Semestre\Base de Datos II\Proyecto Final\GitHub\BD-Pets\Pets\UI\obj\Debug\Mantenimientos\UserControlEmpleado.g.cs
 E:\Universidad Mesoamericana\Sexto Semestre\Base de Datos II\Proyecto Final\GitHub\BD-Pets\Pets\UI\obj\Debug\Mantenimientos\UserControlProductos.g.cs
 E:\Universidad Mesoamericana\Sexto Semestre\Base de Datos II\Proyecto Final\GitHub\BD-Pets\Pets\UI\obj\Debug\Mantenimientos\UserControlUsuario.g.cs
+E:\Universidad Mesoamericana\Sexto Semestre\Base de Datos II\Proyecto Final\GitHub\BD-Pets\Pets\UI\bin\Debug\DAL.dll
+E:\Universidad Mesoamericana\Sexto Semestre\Base de Datos II\Proyecto Final\GitHub\BD-Pets\Pets\UI\bin\Debug\DAL.pdb
+E:\Universidad Mesoamericana\Sexto Semestre\Base de Datos II\Proyecto Final\GitHub\BD-Pets\Pets\UI\bin\Debug\DAL.dll.config
+E:\Universidad Mesoamericana\Sexto Semestre\Base de Datos II\Proyecto Final\GitHub\BD-Pets\Pets\UI\obj\Debug\Mantenimientos\UserControlCliente.baml
+E:\Universidad Mesoamericana\Sexto Semestre\Base de Datos II\Proyecto Final\GitHub\BD-Pets\Pets\UI\obj\Debug\Mantenimientos\UserControlEmpleado.baml
+E:\Universidad Mesoamericana\Sexto Semestre\Base de Datos II\Proyecto Final\GitHub\BD-Pets\Pets\UI\obj\Debug\Mantenimientos\UserControlProductos.baml
+E:\Universidad Mesoamericana\Sexto Semestre\Base de Datos II\Proyecto Final\GitHub\BD-Pets\Pets\UI\obj\Debug\Mantenimientos\UserControlUsuario.baml
+E:\Universidad Mesoamericana\Sexto Semestre\Base de Datos II\Proyecto Final\GitHub\BD-Pets\Pets\UI\obj\Debug\Mantenimientos\UserControlHome.g.cs
+E:\Universidad Mesoamericana\Sexto Semestre\Base de Datos II\Proyecto Final\GitHub\BD-Pets\Pets\UI\obj\Debug\Mantenimientos\UserControlHome.baml
+E:\Universidad Mesoamericana\Sexto Semestre\Base de Datos II\Proyecto Final\GitHub\BD-Pets\Pets\UI\obj\Debug\Mantenimientos\UserControlCategoria.g.cs
+E:\Universidad Mesoamericana\Sexto Semestre\Base de Datos II\Proyecto Final\GitHub\BD-Pets\Pets\UI\obj\Debug\Mantenimientos\UserControlCategoria.baml

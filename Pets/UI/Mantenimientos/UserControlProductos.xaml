@@ -10,11 +10,11 @@
     <Grid  Background="#FFFAF9" HorizontalAlignment="Left" VerticalAlignment="Stretch">
         <Rectangle HorizontalAlignment="Left" Height="165" Margin="11,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="679"/>
         <Label x:Name="labelId" Content="Productos ID:" HorizontalAlignment="Left" Margin="22,34,0,0" VerticalAlignment="Top" Foreground="#233460" FontWeight="Bold" FontFamily="Tahoma" RenderTransformOrigin="1.901,0.775"/>
-        <TextBox IsEnabled="False" x:Name="TextId" TabIndex="0" materialDesign:HintAssist.Hint="codigo" Height="30" Margin="117,27,452.6,443" Text="{Binding SelectedItem.clienteID, ElementName=dataGrid1, Mode=OneWay}" />
-        <TextBox x:Name="TextNombre" TabIndex="1" materialDesign:HintAssist.Hint="nombre" Height="30" Margin="115,70,454.6,400" Text="{Binding SelectedItem.NombreComapania, ElementName=dataGrid1, Mode=OneWay}" />
+        <TextBox IsEnabled="False" x:Name="TextId" TabIndex="0" materialDesign:HintAssist.Hint="codigo" Height="30" Margin="117,27,452.6,443" Text="{Binding SelectedItem.ProductosID, ElementName=dataGrid1, Mode=OneWay}" />
+        <TextBox x:Name="TextNombre" TabIndex="1" materialDesign:HintAssist.Hint="nombre" Height="30" Margin="115,70,454.6,400" Text="{Binding SelectedItem.Nombre, ElementName=dataGrid1, Mode=OneWay}" />
         <Label x:Name="labelNombres" Content="Nombre:" HorizontalAlignment="Left" Margin="22,74,0,0" VerticalAlignment="Top" Foreground="#233460" FontWeight="Bold" FontFamily="Tahoma"/>
         <Label x:Name="labelUnidades" Content="Unidades:" HorizontalAlignment="Left" Margin="22,117,0,0" VerticalAlignment="Top" Foreground="#233460" FontWeight="Bold" FontFamily="Tahoma" RenderTransformOrigin="0.561,0.092"/>
-        <TextBox x:Name="TextUnidades" TabIndex="1" materialDesign:HintAssist.Hint="unidades" Height="30" Margin="115,111,454.6,359" Text="{Binding SelectedItem.NombreComapania, ElementName=dataGrid1, Mode=OneWay}" />
+        <TextBox x:Name="TextUnidades" TabIndex="2" materialDesign:HintAssist.Hint="unidades" Height="30" Margin="115,111,454.6,359" Text="{Binding SelectedItem.Unidades, ElementName=dataGrid1, Mode=OneWay}" />
         <!--<Rectangle Fill="#c3ece9" HorizontalAlignment="Left" Height="55" Margin="17,187,0,0" Stroke="Black" VerticalAlignment="Top" Width="755"/>-->
         <Button x:Name="buttonAgregar" Background="#1A9AE2" Content="Agregar" HorizontalAlignment="Left" Margin="11,196,0,0" VerticalAlignment="Top" Width="150" RenderTransformOrigin="-0.053,0" Height="35" Foreground="#FFFFFF" FontWeight="Bold" BorderBrush="#ffff00" Click="ButtonAgregar_Click"/>
         <Button x:Name="buttonGrabar" Background="#1D1AE2" Content="Grabar" HorizontalAlignment="Left" Margin="11,196,0,0" VerticalAlignment="Top" Width="150" RenderTransformOrigin="-0.053,0" Height="35" Foreground="#FF0C0A0A" FontWeight="Bold" BorderBrush="#000000" Visibility="Hidden" Click="ButtonGrabar_Click"/>
@@ -23,12 +23,12 @@
         <Button x:Name="buttonCancelar" Background="#1A40E2" Content="Cancelar" HorizontalAlignment="Left" Margin="530,196,0,0" VerticalAlignment="Top" Width="150" RenderTransformOrigin="-0.003,0" Height="35" Foreground="#000000" BorderBrush="#000000" IsEnabled= "False" Click="ButtonCancelar_Click"/>
         <DataGrid x:Name="dataGrid1"  IsReadOnly="True" ItemsSource="{Binding estadocontratoCollection}" Background="#fff5ee" HorizontalAlignment="Left" Height="211" Margin="11,264,0,0" VerticalAlignment="Top" Width="669" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto"/>
         <Label x:Name="labelCategoria" Content="Categoria:" HorizontalAlignment="Left" Margin="340,117,0,0" VerticalAlignment="Top" Foreground="#233460" FontWeight="Bold" FontFamily="Tahoma" RenderTransformOrigin="0.561,0.092"/>
-        <ComboBox x:Name="comboBoxEmpleado" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="438,111,0,0" SelectedValue="{Binding SelectedItem.categoriaID, ElementName=dataGrid1, Mode=OneWay}" >
+        <ComboBox x:Name="comboBoxCategoria" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="438,113,0,0" SelectedValue="{Binding SelectedItem.EmpleadosID, ElementName=dataGrid1, Mode=OneWay}" SelectionChanged="ComboBoxCategoria_SelectionChanged" >
 
         </ComboBox>
         <Label x:Name="labelPresentacion" Content="Presentacion:" HorizontalAlignment="Left" Margin="340,35,0,0" VerticalAlignment="Top" Foreground="#233460" FontWeight="Bold" FontFamily="Tahoma"/>
         <Label x:Name="labelDescripcion" Content="Descripcion:" HorizontalAlignment="Left" Margin="340,76,0,0" VerticalAlignment="Top" Foreground="#233460" FontWeight="Bold" FontFamily="Tahoma"/>
-        <TextBox x:Name="TextPresentacion" TabIndex="1" materialDesign:HintAssist.Hint="presentacion" Height="30" Margin="438,30,131.6,440" Text="{Binding SelectedItem.NombreComapania, ElementName=dataGrid1, Mode=OneWay}" TextChanged="TextNombre_Copy_TextChanged" />
-        <TextBox x:Name="TextDescripcion" TabIndex="1" materialDesign:HintAssist.Hint="descripcion" Height="30" Margin="438,70,131.6,400" Text="{Binding SelectedItem.NombreComapania, ElementName=dataGrid1, Mode=OneWay}" />
+        <TextBox x:Name="TextPresentacion" TabIndex="3" materialDesign:HintAssist.Hint="presentacion" Height="30" Margin="438,34,131.6,436" Text="{Binding SelectedItem.Presentacion, ElementName=dataGrid1, Mode=OneWay}" TextChanged="TextNombre_Copy_TextChanged" />
+        <TextBox x:Name="TextDescripcion" TabIndex="4" materialDesign:HintAssist.Hint="descripcion" Height="30" Margin="438,70,131.6,400" Text="{Binding SelectedItem.Descripcion, ElementName=dataGrid1, Mode=OneWay}" />
     </Grid>
 </UserControl>

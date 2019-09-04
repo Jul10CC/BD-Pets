@@ -38,12 +38,12 @@ SourceName="ButtonCloseMenu">
     </Window.Triggers>
     <Grid Background="#FFEEEEEE">
         <StackPanel VerticalAlignment="Top">
-            <Grid Background="#ffa420" Height="10"/>
+            <Grid Background="#E60026" Height="10"/>
             <Grid Margin="5">
                 <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
-                    <TextBlock Text="Sistema de Ventanas TÍTULO "
+                    <TextBlock x:Name="LabelNombreInicio" Text="Bienvenido Usuario: "
 VerticalAlignment="Center" FontSize="40" Style="{StaticResource
-MaterialDesignDisplay4TextBlock}" Margin="20 0"/>
+MaterialDesignDisplay4TextBlock}" Margin="20,2,20,-2"/>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Right"
 Margin="10 0">
@@ -65,6 +65,7 @@ Click="BotonSalir_Click">
         </StackPanel>
         <Grid Margin="250 55 0 0">
             <Grid x:Name="GridPrincipal" HorizontalAlignment="Center"
+                  
 VerticalAlignment="Center"/>
         </Grid>
         <Grid x:Name="GridMenu" Width="70" HorizontalAlignment="Left"
@@ -76,7 +77,7 @@ Background="#004D40">
 x:Name="TrainsitionigContentSlide"
 OpeningEffect="{materialDesign:TransitionEffect SlideInFromLeft,
 Duration=0:0:0.2}">
-                <Grid x:Name="GridCursor" Margin="0 100 0 0" Background="#CDDC39"
+                <Grid x:Name="GridCursor" Margin="0 100 0 0" Background="#1D9C43"
 Width="10" HorizontalAlignment="Left" Height="60" VerticalAlignment="Top"/>
             </materialDesign:TransitioningContent>
             <Grid Height="150" Background="White" RenderTransformOrigin="0.5,0.5"
@@ -92,14 +93,14 @@ Margin="0,0,0,589">
                 <Button x:Name="ButtonOpenMenu" Height="60" Width="60" Margin="5"
 HorizontalAlignment="Right" VerticalAlignment="Top" Style="{StaticResource
 MaterialDesignFloatingActionMiniAccentButton}" Background="{x:Null}"
-BorderBrush="{x:Null}" Foreground="#FF31577E" Click="ButtonOpenMenu_Click">
+BorderBrush="{x:Null}" Foreground="#E65A4B" Click="ButtonOpenMenu_Click">
                     <materialDesign:PackIcon Kind="Menu" Width="25" Height="25"/>
                 </Button>
                 <Button x:Name="ButtonCloseMenu" Visibility="Collapsed"
 Height="60" Width="60" Margin="5" HorizontalAlignment="Right"
 VerticalAlignment="Top" Style="{StaticResource
 MaterialDesignFloatingActionMiniAccentButton}" Background="{x:Null}"
-BorderBrush="{x:Null}" Foreground="#FF31577E" Click="ButtonCloseMenu_Click">
+BorderBrush="{x:Null}" Foreground="#C7383E" Click="ButtonCloseMenu_Click">
                     <materialDesign:PackIcon Kind="ArrowLeft" Width="25"
 Height="25"/>
                 </Button>
@@ -122,7 +123,7 @@ VerticalAlignment="Center" Margin="20 0"/>
                     <StackPanel Orientation="Horizontal">
                         <materialDesign:PackIcon Kind="AssignmentInd"
 Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
-                        <TextBlock Text="Opción 1" FontSize="17"
+                        <TextBlock Text="Clientes" FontSize="17"
 VerticalAlignment="Center" Margin="20 0"/>
                     </StackPanel>
                 </ListViewItem>
@@ -130,7 +131,7 @@ VerticalAlignment="Center" Margin="20 0"/>
                     <StackPanel Orientation="Horizontal">
                         <materialDesign:PackIcon Kind="Person"
 Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
-                        <TextBlock Text="Opción 2" FontSize="17"
+                        <TextBlock Text="Empleados" FontSize="17"
 VerticalAlignment="Center" Margin="20 0"/>
                     </StackPanel>
                 </ListViewItem>
@@ -138,7 +139,7 @@ VerticalAlignment="Center" Margin="20 0"/>
                     <StackPanel Orientation="Horizontal">
                         <materialDesign:PackIcon Kind="PersonAdd" Width="30"
 Height="30" VerticalAlignment="Center" Margin="5"/>
-                        <TextBlock Text="Entrega" FontSize="17"
+                        <TextBlock Text="Usuarios" FontSize="17"
 VerticalAlignment="Center" Margin="20 0"/>
                     </StackPanel>
                 </ListViewItem>
@@ -146,15 +147,15 @@ VerticalAlignment="Center" Margin="20 0"/>
                     <StackPanel Orientation="Horizontal">
                         <materialDesign:PackIcon Kind="Pets" Width="30" Height="30"
 VerticalAlignment="Center" Margin="5"/>
-                        <TextBlock Text="Pagos" FontSize="17"
+                        <TextBlock Text="Productos" FontSize="17"
 VerticalAlignment="Center" Margin="20 0"/>
                     </StackPanel>
                 </ListViewItem>
                 <ListViewItem Height="60">
                     <StackPanel Orientation="Horizontal">
-                        <materialDesign:PackIcon Kind="Refresh" Width="30"
+                        <materialDesign:PackIcon Kind="Cached" Width="30"
 Height="30" VerticalAlignment="Center" Margin="5"/>
-                        <TextBlock Text="Clientes" FontSize="17"
+                        <TextBlock Text="Categorias" FontSize="17"
 VerticalAlignment="Center" Margin="20 0"/>
                     </StackPanel>
                 </ListViewItem>

@@ -80,11 +80,19 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Mantenimientos\UserControlCategoria.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Mantenimientos\UserControlCliente.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Mantenimientos\UserControlEmpleado.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Mantenimientos\UserControlHome.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -98,11 +106,17 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Mantenimientos\UserControlCategoria.xaml.cs">
+      <DependentUpon>UserControlCategoria.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Mantenimientos\UserControlCliente.xaml.cs">
       <DependentUpon>UserControlCliente.xaml</DependentUpon>
     </Compile>
     <Compile Include="Mantenimientos\UserControlEmpleado.xaml.cs">
       <DependentUpon>UserControlEmpleado.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientos\UserControlHome.xaml.cs">
+      <DependentUpon>UserControlHome.xaml</DependentUpon>
     </Compile>
     <Compile Include="Mantenimientos\UserControlProductos.xaml.cs">
       <DependentUpon>UserControlProductos.xaml</DependentUpon>
@@ -146,8 +160,9 @@
       <Name>MODELS</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="assets\" />
+    <Resource Include="assets\petshop.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

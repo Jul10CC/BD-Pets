@@ -30,10 +30,38 @@ namespace UI
             switch (index)
             {
                 case 0:
-                    GridPrincipal.Children.Clear(); MessageBox.Show("INICIO"); break;
-                case 1: GridPrincipal.Children.Clear(); GridPrincipal.Children.Add(new Mantenimientos.UserControl1()); break;
-                case 2: MessageBox.Show("OPCIÓN 2"); break;
-                default: break;
+                    GridPrincipal.Children.Clear();
+                    GridPrincipal.Children.Add(new Mantenimientos.UserControlHome());
+                    LabelNombreInicio.Text = "Bienvenido";
+                    break;
+                case 1:
+                    GridPrincipal.Children.Clear();
+                    GridPrincipal.Children.Add(new Mantenimientos.UserControlCliente());
+                    LabelNombreInicio.Text = "Gestionar Clientes";
+                    break;
+                case 2:
+                    GridPrincipal.Children.Clear();
+                    GridPrincipal.Children.Add(new Mantenimientos.UserControlEmpleado());
+                    LabelNombreInicio.Text = "Gestionar Empleados";
+                    break;
+
+                case 3:
+                    GridPrincipal.Children.Clear();
+                    GridPrincipal.Children.Add(new Mantenimientos.UserControlUsuario());
+                    LabelNombreInicio.Text = "Gestionar Usuarios";
+                    break;
+                case 4:
+                    GridPrincipal.Children.Clear();
+                    GridPrincipal.Children.Add(new Mantenimientos.UserControlProductos());
+                    LabelNombreInicio.Text = "Gestionar Productos";
+                    break;
+                case 5:
+                    GridPrincipal.Children.Clear();
+                    GridPrincipal.Children.Add(new Mantenimientos.UserControlCategoria());
+                    LabelNombreInicio.Text = "Gestionar Categorias de Productos";
+                    break;
+                default:
+                    break;
             }
         }
         private void MoverPestaña(int opcion_seleccionada)

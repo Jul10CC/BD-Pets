@@ -10,11 +10,11 @@
     <Grid  Background="#FFFAF9" HorizontalAlignment="Left" VerticalAlignment="Stretch">
         <Rectangle HorizontalAlignment="Left" Height="165" Margin="11,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="679"/>
         <Label x:Name="labelId" Content="Usuario ID:" HorizontalAlignment="Left" Margin="22,34,0,0" VerticalAlignment="Top" Foreground="#0E5022" FontWeight="Bold" FontFamily="Tahoma" RenderTransformOrigin="1.901,0.775"/>
-        <TextBox IsEnabled="False" x:Name="TextId" TabIndex="0" materialDesign:HintAssist.Hint="codigo" Height="30" Margin="117,27,452.6,443" Text="{Binding SelectedItem.clienteID, ElementName=dataGrid1, Mode=OneWay}" />
-        <TextBox x:Name="TextUsuario" TabIndex="1" materialDesign:HintAssist.Hint="usuario" Height="30" Margin="117,69,452.6,401" Text="{Binding SelectedItem.NombreComapania, ElementName=dataGrid1, Mode=OneWay}" />
+        <TextBox IsEnabled="False" x:Name="TextId" TabIndex="0" materialDesign:HintAssist.Hint="codigo" Height="30" Margin="117,27,452.6,443" Text="{Binding SelectedItem.UsuarioID, ElementName=dataGrid1, Mode=OneWay}" />
+        <TextBox x:Name="TextUsuario" TabIndex="1" materialDesign:HintAssist.Hint="usuario" Height="30" Margin="117,69,452.6,401" Text="{Binding SelectedItem.Username, ElementName=dataGrid1, Mode=OneWay}" />
         <Label x:Name="labelUsuario" Content="Usuario:" HorizontalAlignment="Left" Margin="22,74,0,0" VerticalAlignment="Top" Foreground="#0E5022" FontWeight="Bold" FontFamily="Tahoma"/>
         <Label x:Name="labelPassword" Content="Password:" HorizontalAlignment="Left" Margin="22,117,0,0" VerticalAlignment="Top" Foreground="#0E5022" FontWeight="Bold" FontFamily="Tahoma" RenderTransformOrigin="0.561,0.092"/>
-        <PasswordBox x:Name="textBoxPassword" HorizontalAlignment="Left" Margin="117,116,0,0" VerticalAlignment="Top" Width="120"  materialDesign:HintAssist.Hint="password"/>
+        <PasswordBox x:Name="textBoxPassword"  TabIndex="2" HorizontalAlignment="Left" Margin="117,116,0,0" VerticalAlignment="Top" Width="120"  materialDesign:HintAssist.Hint="password"/>
         <!--<Rectangle Fill="#c3ece9" HorizontalAlignment="Left" Height="55" Margin="17,187,0,0" Stroke="Black" VerticalAlignment="Top" Width="755"/>-->
         <Button x:Name="buttonAgregar" Background="#82E8A0" Content="Agregar" HorizontalAlignment="Left" Margin="11,196,0,0" VerticalAlignment="Top" Width="150" RenderTransformOrigin="-0.053,0" Height="35" Foreground="#FFFFFF" FontWeight="Bold" BorderBrush="#ffff00" Click="ButtonAgregar_Click"/>
         <Button x:Name="buttonGrabar" Background="#23BE52" Content="Grabar" HorizontalAlignment="Left" Margin="11,196,0,0" VerticalAlignment="Top" Width="150" RenderTransformOrigin="-0.053,0" Height="35" Foreground="#FF0C0A0A" FontWeight="Bold" BorderBrush="#000000" Visibility="Hidden" Click="ButtonGrabar_Click"/>

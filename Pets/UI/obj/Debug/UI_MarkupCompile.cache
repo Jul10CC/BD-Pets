@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 E:\Universidad Mesoamericana\Sexto Semestre\Base de Datos II\Proyecto Final\GitHub\BD-Pets\Pets\UI\App.xaml
-6-1172718076
+7824207923
 
-101390518808
+11971895925
 201482021602
-MainWindow.xaml;Mantenimientos\UserControl1.xaml;Mantenimientos\UserControlCliente.xaml;Mantenimientos\UserControlEmpleado.xaml;Mantenimientos\UserControlProductos.xaml;Mantenimientos\UserControlUsuario.xaml;
+MainWindow.xaml;Mantenimientos\UserControlCategoria.xaml;Mantenimientos\UserControlCliente.xaml;Mantenimientos\UserControlEmpleado.xaml;Mantenimientos\UserControlHome.xaml;Mantenimientos\UserControlProductos.xaml;Mantenimientos\UserControlUsuario.xaml;
 
-True
+False
 

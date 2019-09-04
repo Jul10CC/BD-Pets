@@ -2,8 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\Pets",
-    "\\Pets\\UI"
+    "\\Pets\\UI",
+    "\\Pets\\UI\\assets",
+    "\\Pets\\UI\\Mantenimientos"
   ],
-  "SelectedNode": "\\Pets\\UI\\bin",
+  "SelectedNode": "\\Pets\\UI\\assets\\petshop.jpg",
   "PreviewInSolutionExplorer": false
 }
