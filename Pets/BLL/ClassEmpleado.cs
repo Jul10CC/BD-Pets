@@ -62,5 +62,41 @@ namespace BLL
             }
             return resultado;
         }//fin de EmpleadoCliente
+
+        public IEnumerable buscarUsuarioYContrasenia(string nombreusuario, string password)
+        {
+            RepositorioGenerico<Usuario> REP = new RepositorioGenerico<Usuario>();
+            var respuesta = REP.ListarTodoConFiltro(b => b.Username== nombreusuario && b.Password == password);
+            return respuesta;
+        }//fin buscar UsuarioYcontrasenia
+
+        public IEnumerable buscarcargo(int cargoid)
+        {
+            RepositorioGenerico<EmpleadoCargo> REP = new RepositorioGenerico<EmpleadoCargo>();
+            var respuesta = REP.ListarTodoConFiltro(b => b.CargoID == cargoid);
+            return respuesta;
+        }//fin buscar Cargo
+
+        public string Verificacion(string username, string password)
+        {
+            RepositorioGenerico<Empleado> REP = new RepositorioGenerico<Empleado>();
+            Empleado NUEVO = new Empleado();
+            string resultado = "";
+            try
+            {
+                IEnumerable busca = buscarUsuarioYContrasenia(username, password);
+                if (busca.Cast<object>().Any())
+                    resultado = "Bienvenido";
+                else
+                {
+                    resultado = "ERROR";
+                }
+            }
+            catch (Exception error)
+            {
+                resultado = "Error " + error.Message;
+            }
+            return resultado;
+        }//fin del NuevoEstado
     }
 }

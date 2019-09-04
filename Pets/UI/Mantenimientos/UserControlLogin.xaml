@@ -1,0 +1,39 @@
+﻿<UserControl x:Class="UI.Mantenimientos.UserControlLogin"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:UI.Mantenimientos"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             mc:Ignorable="d" 
+             d:DesignHeight="600" d:DesignWidth="1200" Height="700" Width="1200">
+    <Grid  Background="White" HorizontalAlignment="Left" VerticalAlignment="Stretch" Width="1200">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="textBoxLoginUsuario" HorizontalAlignment="Left" Height="32" Margin="469,155,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="202" Background="White" materialDesign:HintAssist.Hint="     Username" AllowDrop="True"/>
+        <Viewbox Width="32" Height="32" Margin="434,151,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" OpacityMask="Red">
+            <Canvas Width="10" Height="10" Background="White">
+                <Path Data="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z" Fill="#584B94" Height="10" Stretch="Fill" Width="10" RenderTransformOrigin="0.5,0.5" >
+                    <Path.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform AngleX="2.291"/>
+                            <RotateTransform/>
+                            <TranslateTransform X="-0.2"/>
+                        </TransformGroup>
+                    </Path.RenderTransform>
+                </Path>
+            </Canvas>
+        </Viewbox>
+        <Viewbox Width="32" Height="32" Margin="436,228,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" OpacityMask="Red">
+            <Canvas Width="24" Height="24">
+                <Path Width="24" Height="24" Data="M12,17A2,2 0 0,0 14,15C14,13.89 13.1,13 12,13A2,2 0 0,0 10,15A2,2 0 0,0 12,17M18,8A2,2 0 0,1 20,10V20A2,2 0 0,1 18,22H6A2,2 0 0,1 4,20V10C4,8.89 4.9,8 6,8H7V6A5,5 0 0,1 12,1A5,5 0 0,1 17,6V8H18M12,3A3,3 0 0,0 9,6V8H15V6A3,3 0 0,0 12,3Z" Fill="#584B94" />
+            </Canvas>
+        </Viewbox>
+        <PasswordBox x:Name="textBoxLoginPassword" HorizontalAlignment="Left" Margin="471,235,0,0" VerticalAlignment="Top" Width="202"  materialDesign:HintAssist.Hint="     Password"/>
+        <Button x:Name="ButtonAcceder" Background="#B485D8" Content="Acceder" HorizontalAlignment="Left" Height="35" Margin="439,304,0,0" VerticalAlignment="Top" Width="234" Click="ButtonAcceder_Click"/>
+        <Label Name="LabelIngresoUsuario" Content="                                            Inicio de Sesión" HorizontalAlignment="Left" Margin="268,84,0,0" VerticalAlignment="Top" Width="542" Height="36" FontSize="18" FontWeight="Bold" Background="#4F4587" BorderBrush="Black" Foreground="#DDFFFFFF"/>
+    </Grid>
+</UserControl>
+

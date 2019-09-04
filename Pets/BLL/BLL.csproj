@@ -44,6 +44,7 @@
     <Compile Include="ClassCategoriaProducto.cs" />
     <Compile Include="ClassCliente.cs" />
     <Compile Include="ClassEmpleado.cs" />
+    <Compile Include="ClassEmpleadoCargo.cs" />
     <Compile Include="ClassProductos.cs" />
     <Compile Include="ClassUsuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

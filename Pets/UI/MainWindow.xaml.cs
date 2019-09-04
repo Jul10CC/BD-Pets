@@ -32,7 +32,7 @@ namespace UI
                 case 0:
                     GridPrincipal.Children.Clear();
                     GridPrincipal.Children.Add(new Mantenimientos.UserControlHome());
-                    LabelNombreInicio.Text = "Bienvenido";
+                    LabelNombreInicio.Text = "Bienvenido Administrador";
                     break;
                 case 1:
                     GridPrincipal.Children.Clear();

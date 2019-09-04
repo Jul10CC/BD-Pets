@@ -49,7 +49,9 @@ namespace UI.Mantenimientos
         private void ButtonGrabar_Click(object sender, RoutedEventArgs e)
         {
             ClassUsuario Logica = new ClassUsuario();
+            ClassEmpleadoCargo Logica2 = new ClassEmpleadoCargo();
             string resp = Logica.NuevoUsuario(TextUsuario.Text, textBoxPassword.Password, Convert.ToInt32(comboBoxEmpleado.SelectedValue));
+        
             if (resp.ToUpper().Contains("ERROR"))
                 MessageBox.Show(resp, "Error al grabar ", MessageBoxButton.OK, MessageBoxImage.Error);
             else

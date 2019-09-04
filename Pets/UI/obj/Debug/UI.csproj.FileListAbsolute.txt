@@ -44,3 +44,7 @@ E:\Universidad Mesoamericana\Sexto Semestre\Base de Datos II\Proyecto Final\GitH
 E:\Universidad Mesoamericana\Sexto Semestre\Base de Datos II\Proyecto Final\GitHub\BD-Pets\Pets\UI\obj\Debug\Mantenimientos\UserControlHome.baml
 E:\Universidad Mesoamericana\Sexto Semestre\Base de Datos II\Proyecto Final\GitHub\BD-Pets\Pets\UI\obj\Debug\Mantenimientos\UserControlCategoria.g.cs
 E:\Universidad Mesoamericana\Sexto Semestre\Base de Datos II\Proyecto Final\GitHub\BD-Pets\Pets\UI\obj\Debug\Mantenimientos\UserControlCategoria.baml
+E:\Universidad Mesoamericana\Sexto Semestre\Base de Datos II\Proyecto Final\GitHub\BD-Pets\Pets\UI\obj\Debug\Mantenimientos\UserControlLogin.g.cs
+E:\Universidad Mesoamericana\Sexto Semestre\Base de Datos II\Proyecto Final\GitHub\BD-Pets\Pets\UI\obj\Debug\Mantenimientos\UserControlLogin.baml
+E:\Universidad Mesoamericana\Sexto Semestre\Base de Datos II\Proyecto Final\GitHub\BD-Pets\Pets\UI\obj\Debug\Window1.g.cs
+E:\Universidad Mesoamericana\Sexto Semestre\Base de Datos II\Proyecto Final\GitHub\BD-Pets\Pets\UI\obj\Debug\Window1.baml

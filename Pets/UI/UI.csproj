@@ -68,6 +68,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Window1.xaml.cs">
+      <DependentUpon>Window1.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -96,11 +99,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Mantenimientos\UserControlLogin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Mantenimientos\UserControlProductos.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Mantenimientos\UserControlUsuario.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Window1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -117,6 +128,9 @@
     </Compile>
     <Compile Include="Mantenimientos\UserControlHome.xaml.cs">
       <DependentUpon>UserControlHome.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientos\UserControlLogin.xaml.cs">
+      <DependentUpon>UserControlLogin.xaml</DependentUpon>
     </Compile>
     <Compile Include="Mantenimientos\UserControlProductos.xaml.cs">
       <DependentUpon>UserControlProductos.xaml</DependentUpon>
