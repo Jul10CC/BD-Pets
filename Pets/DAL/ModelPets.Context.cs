@@ -12,6 +12,8 @@ namespace MODELS
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
+    using System.Data.Entity.Core.Objects;
+    using System.Linq;
     
     public partial class PetsJCEntities : DbContext
     {
@@ -37,5 +39,14 @@ namespace MODELS
         public virtual DbSet<ModoPago> ModoPago { get; set; }
         public virtual DbSet<Productos> Productos { get; set; }
         public virtual DbSet<Usuario> Usuario { get; set; }
+    
+        public virtual ObjectResult<sp_Logueo_Result> sp_Logueo(Nullable<int> usuario)
+        {
+            var usuarioParameter = usuario.HasValue ?
+                new ObjectParameter("usuario", usuario) :
+                new ObjectParameter("usuario", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<sp_Logueo_Result>("sp_Logueo", usuarioParameter);
+        }
     }
 }
