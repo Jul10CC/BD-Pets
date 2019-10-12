@@ -23,7 +23,7 @@
         <Button x:Name="buttonCancelar" Background="#1A40E2" Content="Cancelar" HorizontalAlignment="Left" Margin="530,196,0,0" VerticalAlignment="Top" Width="150" RenderTransformOrigin="-0.003,0" Height="35" Foreground="#000000" BorderBrush="#000000" IsEnabled= "False" Click="ButtonCancelar_Click"/>
         <DataGrid x:Name="dataGrid1"  IsReadOnly="True" ItemsSource="{Binding estadocontratoCollection}" Background="#fff5ee" HorizontalAlignment="Left" Height="211" Margin="11,264,0,0" VerticalAlignment="Top" Width="669" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto"/>
         <Label x:Name="labelCategoria" Content="Categoria:" HorizontalAlignment="Left" Margin="340,117,0,0" VerticalAlignment="Top" Foreground="#233460" FontWeight="Bold" FontFamily="Tahoma" RenderTransformOrigin="0.561,0.092"/>
-        <ComboBox x:Name="comboBoxCategoria" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="438,113,0,0" SelectedValue="{Binding SelectedItem.EmpleadosID, ElementName=dataGrid1, Mode=OneWay}" SelectionChanged="ComboBoxCategoria_SelectionChanged" >
+        <ComboBox x:Name="comboBoxCategoria" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="438,113,0,0" SelectedValue="{Binding SelectedItem.CategoriaProductosID, ElementName=dataGrid1, Mode=OneWay}" SelectionChanged="ComboBoxCategoria_SelectionChanged" >
 
         </ComboBox>
         <Label x:Name="labelPresentacion" Content="Presentacion:" HorizontalAlignment="Left" Margin="340,35,0,0" VerticalAlignment="Top" Foreground="#233460" FontWeight="Bold" FontFamily="Tahoma"/>

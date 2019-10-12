@@ -79,7 +79,7 @@ namespace UI.Mantenimientos
                 info.Unidades = Convert.ToInt32(this.TextUnidades.Text);
                 info.Presentacion = this.TextPresentacion.Text;
                 info.Descripcion = this.TextDescripcion.Text;
-                //info.CategoriaProductosID = Convert.ToInt32(this.comboBoxCategoria.SelectedValue);
+                info.CategoriaProductosID = Convert.ToInt32(this.comboBoxCategoria.SelectedValue);
                 resp = logica.Actualizar(info);
                 MessageBox.Show(resp);
             }

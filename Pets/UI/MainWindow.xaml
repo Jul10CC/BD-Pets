@@ -159,6 +159,15 @@ Height="30" VerticalAlignment="Center" Margin="5"/>
 VerticalAlignment="Center" Margin="20 0"/>
                     </StackPanel>
                 </ListViewItem>
+                <!--Factura-->
+                <ListViewItem Height="60">
+                    <StackPanel Orientation="Horizontal">
+                        <materialDesign:PackIcon Kind="Payment" Width="30"
+Height="30" VerticalAlignment="Center" Margin="5"/>
+                        <TextBlock Text="Factura" FontSize="17"
+VerticalAlignment="Center" Margin="20 0"/>
+                    </StackPanel>
+                </ListViewItem>
             </ListView>
         </Grid>
     </Grid>

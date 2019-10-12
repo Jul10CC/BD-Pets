@@ -328,5 +328,14 @@
       <End Role="Productos" EntitySet="Productos" />
       <End Role="Inventario" EntitySet="Inventario" />
     </AssociationSet>
+    <FunctionImport Name="sp_Logueo" ReturnType="Collection(PetsJCModel.sp_Logueo_Result)">
+      <Parameter Name="usuario" Mode="In" Type="Int32" />
+    </FunctionImport>
   </EntityContainer>
+  <ComplexType Name="sp_Logueo_Result">
+    <Property Type="String" Name="Username" Nullable="false" MaxLength="15" />
+    <Property Type="String" Name="Nombre" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="Apellido" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="Nombre1" Nullable="false" MaxLength="15" />
+  </ComplexType>
 </Schema>
