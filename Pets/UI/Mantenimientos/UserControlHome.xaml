@@ -9,6 +9,6 @@
              d:DesignHeight="500" d:DesignWidth="700">
     <Grid  Background="#FFFAF9" HorizontalAlignment="Left" VerticalAlignment="Stretch">
         <Rectangle HorizontalAlignment="Left" Height="464" Margin="11,10,-0.4,0" Stroke="Black" VerticalAlignment="Top" Width="679"/>
-        <Image Margin="127,77,162,62" Source="/assets/petshop.jpg"/>
+        <Image Margin="258,81,31,58" Source="/assets/petshop.jpg"/>
     </Grid>
 </UserControl>

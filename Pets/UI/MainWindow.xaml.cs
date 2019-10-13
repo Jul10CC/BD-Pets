@@ -60,6 +60,11 @@ namespace UI
                     GridPrincipal.Children.Add(new Mantenimientos.UserControlCategoria());
                     LabelNombreInicio.Text = "Gestionar Categorias de Productos";
                     break;
+                case 6:
+                    GridPrincipal.Children.Clear();
+                    GridPrincipal.Children.Add(new Mantenimientos.UserControlFactura());
+                    LabelNombreInicio.Text = "Gestionar Factura";
+                    break;
                 default:
                     break;
             }

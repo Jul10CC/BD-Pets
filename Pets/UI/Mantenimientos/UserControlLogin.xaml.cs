@@ -31,9 +31,6 @@ namespace UI.Mantenimientos
         private void ButtonAcceder_Click(object sender, RoutedEventArgs e)
         {
             ClassEmpleado Logica = new ClassEmpleado();
-            bool b1=true;
-            bool b2 = true;
-            bool b3 = true;
             string resp = Logica.Verificacion(textBoxLoginUsuario.Text, textBoxLoginPassword.Password.ToString());
             if (resp.ToUpper().Contains("ERROR"))
             {

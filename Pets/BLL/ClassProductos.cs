@@ -27,7 +27,7 @@ namespace BLL
                 pro.Unidades = unidades;
                 pro.Presentacion = presentacion;
                 pro.Descripcion = descripcion;
-                pro.CategoriaProductosID = categoria;
+                //pro.CategoriaProductosID = categoria;
                 resultado = REP.Agregar(pro);
             }
             catch (Exception error)

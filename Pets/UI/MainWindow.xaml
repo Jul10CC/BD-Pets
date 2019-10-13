@@ -8,7 +8,7 @@
         Background="{DynamicResource MaterialDesignPaper}"
         FontFamily="{DynamicResource MaterialDesignFont}"       
         mc:Ignorable="d"
-        Title="MainWindow" Height="800" Width="1100">
+        Title="MainWindow" Height="800" Width="1426.4">
     <Window.Resources>
         <Storyboard x:Key="OpenMenu">
             <DoubleAnimationUsingKeyFrames
@@ -36,7 +36,7 @@ SourceName="ButtonCloseMenu">
             <BeginStoryboard Storyboard="{StaticResource CloseMenu}"/>
         </EventTrigger>
     </Window.Triggers>
-    <Grid Background="#FFEEEEEE">
+    <Grid Background="#FFEEEEEE" Margin="0,0,4,0.4">
         <StackPanel VerticalAlignment="Top">
             <Grid Background="#E60026" Height="10"/>
             <Grid Margin="5">
@@ -63,7 +63,7 @@ Click="BotonSalir_Click">
                 </StackPanel>
             </Grid>
         </StackPanel>
-        <Grid Margin="250 55 0 0">
+        <Grid Margin="-88,55,415,0">
             <Grid x:Name="GridPrincipal" HorizontalAlignment="Center"
                   
 VerticalAlignment="Center"/>
