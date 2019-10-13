@@ -38,7 +38,14 @@ namespace UI.Mantenimientos
         XElement pago1;
         XElement pago2;
         XElement contactoxml;
+        //Variables
         bool b1 = false;
+        int total = 0;
+        int mul1 = 0;
+        int mul2 = 0;
+        int pag0 = 0;
+        string mensaje1 = "Se ha completado el pago";
+        string mensaje2 = "No se ha completado el pago";
         public UserControlFactura()
         {
             InitializeComponent();
@@ -107,7 +114,12 @@ namespace UI.Mantenimientos
             {
                 contactoxml.Add(new XElement("Detalle", deta1, deta2, deta3));
             }
+            
             this.Texto.Text = contactoxml.ToString();
+            mul1 = Convert.ToInt32(TextCantidad.Text);
+            mul2 = Convert.ToInt32(TextPrecio.Text);
+            total += Convert.ToInt32(mul1*mul2);
+           this.TextTotal.Text=total.ToString();
         }
 
         private void ComboBoxCliente_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -134,6 +146,15 @@ namespace UI.Mantenimientos
                 contactoxml.Add(new XElement("Pagos", pago1, pago2));
             }
             this.Texto.Text = contactoxml.ToString();
+            pag0 += Convert.ToInt32(TextPago.Text);
+            if(pag0==total)
+            {
+              this.TextMensaje.Text = mensaje1;
+            }
+            else if(pag0<total)
+            {
+                this.TextMensaje.Text = mensaje2;
+            }
         }
     }
 }

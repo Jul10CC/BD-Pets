@@ -44,5 +44,6 @@
         <TextBox IsEnabled="True" x:Name="TextModoPago" TabIndex="5" materialDesign:HintAssist.Hint="modo pago" Height="30" Margin="1130,236,27,370" Text="{Binding SelectedItem.Nombre, ElementName=dataGrid1, Mode=OneWay}"/>
         <TextBox IsEnabled="True" x:Name="TextPago" TabIndex="6" materialDesign:HintAssist.Hint="pago" Height="30" Margin="1130,282,26,324" Text="{Binding SelectedItem.Total, ElementName=dataGrid1, Mode=OneWay}"/>
         <Button x:Name="buttonAgregarPago" Background="#8806CE" Content="Pagar" HorizontalAlignment="Left" Margin="1101,362,0,0" VerticalAlignment="Top" Width="88" RenderTransformOrigin="-0.003,0" Height="35" Foreground="#000000" BorderBrush="#000000" Click="ButtonAgregarPago_Click"/>
+        <TextBox IsEnabled="False" x:Name="TextMensaje" TabIndex="7" materialDesign:HintAssist.Hint="" Height="50" Margin="1063,430,27,156" Text="{Binding SelectedItem.as, ElementName=dataGrid1, Mode=OneWay}"/>
     </Grid>
 </UserControl>
