@@ -90,6 +90,12 @@
     <Compile Include="sp_Logueo_Result.cs">
       <DependentUpon>ModelPets.tt</DependentUpon>
     </Compile>
+    <Compile Include="sp_xml2_Result.cs">
+      <DependentUpon>ModelPets.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_xml_Result.cs">
+      <DependentUpon>ModelPets.tt</DependentUpon>
+    </Compile>
     <Compile Include="Usuario.cs">
       <DependentUpon>ModelPets.tt</DependentUpon>
     </Compile>

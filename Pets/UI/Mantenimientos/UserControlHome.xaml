@@ -7,8 +7,12 @@
              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
              mc:Ignorable="d" 
              d:DesignHeight="500" d:DesignWidth="700">
-    <Grid  Background="#FFFAF9" HorizontalAlignment="Left" VerticalAlignment="Stretch">
-        <Rectangle HorizontalAlignment="Left" Height="464" Margin="11,10,-0.4,0" Stroke="Black" VerticalAlignment="Top" Width="679"/>
-        <Image Margin="258,81,31,58" Source="/assets/petshop.jpg"/>
+    <Grid  Background="#FFFAF9" HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="0,0,-653,0" Width="1353">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="171*"/>
+            <ColumnDefinition Width="4*"/>
+        </Grid.ColumnDefinitions>
+        <Rectangle HorizontalAlignment="Left" Height="464" Margin="11,10,-565,0" Stroke="Black" VerticalAlignment="Top" Width="1254" Grid.ColumnSpan="2"/>
+        <Image Margin="86,67,171.6,72" Source="/assets/petshop.jpg"/>
     </Grid>
 </UserControl>

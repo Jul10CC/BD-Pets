@@ -140,5 +140,27 @@
         </ComplexTypeMapping>
       </ResultMapping>
     </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_xml" FunctionName="PetsJCModel.Store.sp_xml">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="PetsJCModel.sp_xml_Result">
+          <ScalarProperty Name="DetalleID" ColumnName="DetalleID" />
+          <ScalarProperty Name="ProductosID" ColumnName="ProductosID" />
+          <ScalarProperty Name="FacturaID" ColumnName="FacturaID" />
+          <ScalarProperty Name="Cantidad" ColumnName="Cantidad" />
+          <ScalarProperty Name="Precio" ColumnName="Precio" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_xml2" FunctionName="PetsJCModel.Store.sp_xml2">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="PetsJCModel.sp_xml2_Result">
+          <ScalarProperty Name="DetalleID" ColumnName="DetalleID" />
+          <ScalarProperty Name="ProductosID" ColumnName="ProductosID" />
+          <ScalarProperty Name="FacturaID" ColumnName="FacturaID" />
+          <ScalarProperty Name="Cantidad" ColumnName="Cantidad" />
+          <ScalarProperty Name="Precio" ColumnName="Precio" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
   </EntityContainerMapping>
 </Mapping>

@@ -14,5 +14,10 @@ namespace BLL
             ClassTSQL Lg = new ClassTSQL();
             return Lg.ProcedimientoTabla(usuario);
         }
+        public IEnumerable SP_XML(string xml_cadena)
+        {
+            ClassTSQL Lg = new ClassTSQL();
+            return Lg.SP_XML_Prueba(xml_cadena);
+        }
     }
 }

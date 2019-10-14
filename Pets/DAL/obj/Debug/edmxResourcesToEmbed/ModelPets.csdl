@@ -331,11 +331,31 @@
     <FunctionImport Name="sp_Logueo" ReturnType="Collection(PetsJCModel.sp_Logueo_Result)">
       <Parameter Name="usuario" Mode="In" Type="Int32" />
     </FunctionImport>
+    <FunctionImport Name="sp_xml" ReturnType="Collection(PetsJCModel.sp_xml_Result)">
+      <Parameter Name="xml_estructura" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_xml2" ReturnType="Collection(PetsJCModel.sp_xml2_Result)">
+      <Parameter Name="xml_estructura" Mode="In" Type="String" />
+    </FunctionImport>
   </EntityContainer>
   <ComplexType Name="sp_Logueo_Result">
     <Property Type="String" Name="Username" Nullable="false" MaxLength="15" />
     <Property Type="String" Name="Nombre" Nullable="false" MaxLength="20" />
     <Property Type="String" Name="Apellido" Nullable="false" MaxLength="20" />
     <Property Type="String" Name="Nombre1" Nullable="false" MaxLength="15" />
+  </ComplexType>
+  <ComplexType Name="sp_xml_Result">
+    <Property Type="Int32" Name="DetalleID" Nullable="false" />
+    <Property Type="Int32" Name="ProductosID" Nullable="true" />
+    <Property Type="Int32" Name="FacturaID" Nullable="true" />
+    <Property Type="Int32" Name="Cantidad" Nullable="false" />
+    <Property Type="Decimal" Name="Precio" Nullable="false" Precision="18" Scale="0" />
+  </ComplexType>
+  <ComplexType Name="sp_xml2_Result">
+    <Property Type="Int32" Name="DetalleID" Nullable="false" />
+    <Property Type="Int32" Name="ProductosID" Nullable="true" />
+    <Property Type="Int32" Name="FacturaID" Nullable="true" />
+    <Property Type="Int32" Name="Cantidad" Nullable="false" />
+    <Property Type="Decimal" Name="Precio" Nullable="false" Precision="18" Scale="0" />
   </ComplexType>
 </Schema>

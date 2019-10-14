@@ -48,5 +48,23 @@ namespace MODELS
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<sp_Logueo_Result>("sp_Logueo", usuarioParameter);
         }
+    
+        public virtual ObjectResult<sp_xml_Result> sp_xml(string xml_estructura)
+        {
+            var xml_estructuraParameter = xml_estructura != null ?
+                new ObjectParameter("xml_estructura", xml_estructura) :
+                new ObjectParameter("xml_estructura", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<sp_xml_Result>("sp_xml", xml_estructuraParameter);
+        }
+    
+        public virtual ObjectResult<sp_xml2_Result> sp_xml2(string xml_estructura)
+        {
+            var xml_estructuraParameter = xml_estructura != null ?
+                new ObjectParameter("xml_estructura", xml_estructura) :
+                new ObjectParameter("xml_estructura", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<sp_xml2_Result>("sp_xml2", xml_estructuraParameter);
+        }
     }
 }

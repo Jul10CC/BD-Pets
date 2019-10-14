@@ -44,8 +44,9 @@ namespace UI.Mantenimientos
         int mul1 = 0;
         int mul2 = 0;
         int pag0 = 0;
+        int resta = 0;
         string mensaje1 = "Se ha completado el pago";
-        string mensaje2 = "No se ha completado el pago";
+        string mensaje2 = "No se ha completado el pago, faltan: Q";
         public UserControlFactura()
         {
             InitializeComponent();
@@ -97,7 +98,15 @@ namespace UI.Mantenimientos
 
         private void ButtonConfirmar_Click(object sender, RoutedEventArgs e)
         {
-
+            if (pag0 == total)
+            {
+                ClassConsultas Logica = new ClassConsultas();
+                this.dataGrid1.ItemsSource = Logica.SP_XML(contactoxml.ToString());
+            }
+            else
+            {
+                MessageBox.Show("No se ha completado el pago");
+            }         
         }
 
         private void ButtonAgregar_Click(object sender, RoutedEventArgs e)
@@ -147,13 +156,14 @@ namespace UI.Mantenimientos
             }
             this.Texto.Text = contactoxml.ToString();
             pag0 += Convert.ToInt32(TextPago.Text);
-            if(pag0==total)
+            resta = total - pag0;
+            if (pag0==total)
             {
               this.TextMensaje.Text = mensaje1;
             }
             else if(pag0<total)
             {
-                this.TextMensaje.Text = mensaje2;
+                this.TextMensaje.Text = mensaje2 + resta ;
             }
         }
     }
