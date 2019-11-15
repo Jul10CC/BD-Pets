@@ -9,3 +9,4 @@ E:\Universidad Mesoamericana\Sexto Semestre\Base de Datos II\Proyecto Final\GitH
 E:\Universidad Mesoamericana\Sexto Semestre\Base de Datos II\Proyecto Final\GitHub\BD-Pets\Pets\MODELS\obj\Debug\MODELS.csproj.CopyComplete
 E:\Universidad Mesoamericana\Sexto Semestre\Base de Datos II\Proyecto Final\GitHub\BD-Pets\Pets\MODELS\obj\Debug\MODELS.dll
 E:\Universidad Mesoamericana\Sexto Semestre\Base de Datos II\Proyecto Final\GitHub\BD-Pets\Pets\MODELS\obj\Debug\MODELS.pdb
+E:\Universidad Mesoamericana\Sexto Semestre\Base de Datos II\Proyecto Final\GitHub\BD-Pets\Pets\MODELS\obj\Debug\MODELS.csprojAssemblyReference.cache

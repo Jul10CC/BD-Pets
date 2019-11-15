@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{E
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MODELS", "MODELS\MODELS.csproj", "{76E8582F-E859-4A38-AF2F-7CB4E1E13E5B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestApi", "RestApi\RestApi.csproj", "{AC921664-266A-464A-BA22-DE1F99EFAEE3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{76E8582F-E859-4A38-AF2F-7CB4E1E13E5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{76E8582F-E859-4A38-AF2F-7CB4E1E13E5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{76E8582F-E859-4A38-AF2F-7CB4E1E13E5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC921664-266A-464A-BA22-DE1F99EFAEE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC921664-266A-464A-BA22-DE1F99EFAEE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC921664-266A-464A-BA22-DE1F99EFAEE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC921664-266A-464A-BA22-DE1F99EFAEE3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
