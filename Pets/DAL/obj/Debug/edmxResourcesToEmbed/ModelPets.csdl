@@ -337,6 +337,21 @@
     <FunctionImport Name="sp_xml2" ReturnType="Collection(PetsJCModel.sp_xml2_Result)">
       <Parameter Name="xml_estructura" Mode="In" Type="String" />
     </FunctionImport>
+    <FunctionImport Name="sp_informe1" ReturnType="Collection(PetsJCModel.sp_informe1_Result)">
+      <Parameter Name="FECHA_DESDE" Mode="In" Type="DateTime" />
+      <Parameter Name="FECHA_HASTA" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="sp_informe2" ReturnType="Collection(PetsJCModel.sp_informe2_Result)">
+      <Parameter Name="FECHA_DESDE" Mode="In" Type="DateTime" />
+      <Parameter Name="FECHA_HASTA" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="sp_informe3" ReturnType="Collection(PetsJCModel.sp_informe3_Result)">
+      <Parameter Name="FECHA_DESDE" Mode="In" Type="DateTime" />
+      <Parameter Name="FECHA_HASTA" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="sp_informe4" ReturnType="Collection(PetsJCModel.sp_informe4_Result)">
+      <Parameter Name="detalle" Mode="In" Type="Int32" />
+    </FunctionImport>
   </EntityContainer>
   <ComplexType Name="sp_Logueo_Result">
     <Property Type="String" Name="Username" Nullable="false" MaxLength="15" />
@@ -357,5 +372,26 @@
     <Property Type="Int32" Name="FacturaID" Nullable="true" />
     <Property Type="Int32" Name="Cantidad" Nullable="false" />
     <Property Type="Decimal" Name="Precio" Nullable="false" Precision="18" Scale="0" />
+  </ComplexType>
+  <ComplexType Name="sp_informe1_Result">
+    <Property Type="String" Name="Nombre" Nullable="false" MaxLength="25" />
+    <Property Type="Decimal" Name="SubTotal" Nullable="true" Precision="38" Scale="6" />
+  </ComplexType>
+  <ComplexType Name="sp_informe2_Result">
+    <Property Type="String" Name="Nombre" Nullable="false" MaxLength="25" />
+    <Property Type="Decimal" Name="Total" Nullable="true" Precision="38" Scale="0" />
+  </ComplexType>
+  <ComplexType Name="sp_informe3_Result">
+    <Property Type="String" Name="Nombre" Nullable="false" MaxLength="25" />
+    <Property Type="String" Name="Descripcion" Nullable="false" MaxLength="30" />
+    <Property Type="Int32" Name="Cantidad" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="sp_informe4_Result">
+    <Property Type="Int32" Name="FacturaID" Nullable="false" />
+    <Property Type="DateTime" Name="Fecha_Factura" Nullable="false" Precision="23" />
+    <Property Type="Boolean" Name="Estado" Nullable="false" />
+    <Property Type="Decimal" Name="Total" Nullable="false" Precision="18" Scale="0" />
+    <Property Type="String" Name="Nombre" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="Apellido" Nullable="false" MaxLength="20" />
   </ComplexType>
 </Schema>

@@ -65,6 +65,11 @@ namespace UI
                     GridPrincipal.Children.Add(new Mantenimientos.UserControlFactura());
                     LabelNombreInicio.Text = "Gestionar Factura";
                     break;
+                case 7:
+                    GridPrincipal.Children.Clear();
+                    GridPrincipal.Children.Add(new Mantenimientos.UserControlInformes());
+                    LabelNombreInicio.Text = "Reportes";
+                    break;
                 default:
                     break;
             }

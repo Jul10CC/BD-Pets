@@ -66,5 +66,53 @@ namespace MODELS
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<sp_xml2_Result>("sp_xml2", xml_estructuraParameter);
         }
+    
+        public virtual ObjectResult<sp_informe1_Result> sp_informe1(Nullable<System.DateTime> fECHA_DESDE, Nullable<System.DateTime> fECHA_HASTA)
+        {
+            var fECHA_DESDEParameter = fECHA_DESDE.HasValue ?
+                new ObjectParameter("FECHA_DESDE", fECHA_DESDE) :
+                new ObjectParameter("FECHA_DESDE", typeof(System.DateTime));
+    
+            var fECHA_HASTAParameter = fECHA_HASTA.HasValue ?
+                new ObjectParameter("FECHA_HASTA", fECHA_HASTA) :
+                new ObjectParameter("FECHA_HASTA", typeof(System.DateTime));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<sp_informe1_Result>("sp_informe1", fECHA_DESDEParameter, fECHA_HASTAParameter);
+        }
+    
+        public virtual ObjectResult<sp_informe2_Result> sp_informe2(Nullable<System.DateTime> fECHA_DESDE, Nullable<System.DateTime> fECHA_HASTA)
+        {
+            var fECHA_DESDEParameter = fECHA_DESDE.HasValue ?
+                new ObjectParameter("FECHA_DESDE", fECHA_DESDE) :
+                new ObjectParameter("FECHA_DESDE", typeof(System.DateTime));
+    
+            var fECHA_HASTAParameter = fECHA_HASTA.HasValue ?
+                new ObjectParameter("FECHA_HASTA", fECHA_HASTA) :
+                new ObjectParameter("FECHA_HASTA", typeof(System.DateTime));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<sp_informe2_Result>("sp_informe2", fECHA_DESDEParameter, fECHA_HASTAParameter);
+        }
+    
+        public virtual ObjectResult<sp_informe3_Result> sp_informe3(Nullable<System.DateTime> fECHA_DESDE, Nullable<System.DateTime> fECHA_HASTA)
+        {
+            var fECHA_DESDEParameter = fECHA_DESDE.HasValue ?
+                new ObjectParameter("FECHA_DESDE", fECHA_DESDE) :
+                new ObjectParameter("FECHA_DESDE", typeof(System.DateTime));
+    
+            var fECHA_HASTAParameter = fECHA_HASTA.HasValue ?
+                new ObjectParameter("FECHA_HASTA", fECHA_HASTA) :
+                new ObjectParameter("FECHA_HASTA", typeof(System.DateTime));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<sp_informe3_Result>("sp_informe3", fECHA_DESDEParameter, fECHA_HASTAParameter);
+        }
+    
+        public virtual ObjectResult<sp_informe4_Result> sp_informe4(Nullable<int> detalle)
+        {
+            var detalleParameter = detalle.HasValue ?
+                new ObjectParameter("detalle", detalle) :
+                new ObjectParameter("detalle", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<sp_informe4_Result>("sp_informe4", detalleParameter);
+        }
     }
 }

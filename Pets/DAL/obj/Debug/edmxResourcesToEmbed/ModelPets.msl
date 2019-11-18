@@ -162,5 +162,42 @@
         </ComplexTypeMapping>
       </ResultMapping>
     </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_informe1" FunctionName="PetsJCModel.Store.sp_informe1">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="PetsJCModel.sp_informe1_Result">
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="SubTotal" ColumnName="SubTotal" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_informe2" FunctionName="PetsJCModel.Store.sp_informe2">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="PetsJCModel.sp_informe2_Result">
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_informe3" FunctionName="PetsJCModel.Store.sp_informe3">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="PetsJCModel.sp_informe3_Result">
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Cantidad" ColumnName="Cantidad" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_informe4" FunctionName="PetsJCModel.Store.sp_informe4">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="PetsJCModel.sp_informe4_Result">
+          <ScalarProperty Name="FacturaID" ColumnName="FacturaID" />
+          <ScalarProperty Name="Fecha_Factura" ColumnName="Fecha_Factura" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Apellido" ColumnName="Apellido" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
   </EntityContainerMapping>
 </Mapping>

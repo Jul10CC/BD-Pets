@@ -71,6 +71,9 @@
     <Compile Include="Mantenimientos\UserControlFactura.xaml.cs">
       <DependentUpon>UserControlFactura.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Mantenimientos\UserControlInformes.xaml.cs">
+      <DependentUpon>UserControlInformes.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Window1.xaml.cs">
       <DependentUpon>Window1.xaml</DependentUpon>
     </Compile>
@@ -103,6 +106,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Mantenimientos\UserControlHome.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Mantenimientos\UserControlInformes.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

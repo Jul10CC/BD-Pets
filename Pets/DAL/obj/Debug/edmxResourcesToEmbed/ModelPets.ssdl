@@ -249,6 +249,21 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Function Name="sp_informe1" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FECHA_DESDE" Type="datetime" Mode="In" />
+    <Parameter Name="FECHA_HASTA" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="sp_informe2" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FECHA_DESDE" Type="datetime" Mode="In" />
+    <Parameter Name="FECHA_HASTA" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="sp_informe3" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FECHA_DESDE" Type="datetime" Mode="In" />
+    <Parameter Name="FECHA_HASTA" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="sp_informe4" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="detalle" Type="int" Mode="In" />
+  </Function>
   <Function Name="sp_Logueo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
     <Parameter Name="usuario" Type="int" Mode="In" />
   </Function>

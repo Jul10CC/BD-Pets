@@ -106,7 +106,7 @@ Height="25"/>
                 </Button>
                 <Image Height="80" VerticalAlignment="Bottom"/>
             </Grid>
-            <ListView x:Name="ListViewMenu" Margin="0 150" Foreground="LightGray"
+            <ListView x:Name="ListViewMenu" Margin="0,150,0,9.6" Foreground="LightGray"
 FontFamily="Josefin Slab" FontSize="18"
 SelectionChanged="ListViewMenu_SelectionChanged"
 ScrollViewer.HorizontalScrollBarVisibility="Disabled" SelectedIndex="0"
@@ -168,6 +168,25 @@ Height="30" VerticalAlignment="Center" Margin="5"/>
 VerticalAlignment="Center" Margin="20 0"/>
                     </StackPanel>
                 </ListViewItem>
+                <!--Informe 1 2 3-->
+                <ListViewItem Height="60">
+                    <StackPanel Orientation="Horizontal">
+                        <materialDesign:PackIcon Kind="CardGiftcard" Width="30"
+Height="30" VerticalAlignment="Center" Margin="5"/>
+                        <TextBlock Text="Informes" FontSize="17"
+VerticalAlignment="Center" Margin="20 0"/>
+                    </StackPanel>
+                </ListViewItem>
+                <!--Informe4-->
+                <ListViewItem Height="60">
+                    <StackPanel Orientation="Horizontal">
+                        <materialDesign:PackIcon Kind="CardMembership" Width="30"
+Height="30" VerticalAlignment="Center" Margin="5"/>
+                        <TextBlock Text="Factura" FontSize="17"
+VerticalAlignment="Center" Margin="20 0"/>
+                    </StackPanel>
+                </ListViewItem>
+
             </ListView>
         </Grid>
     </Grid>
