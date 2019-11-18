@@ -64,7 +64,7 @@ namespace DAL
         {
             int idFac = Convert.ToInt32(factura);
             contexto = new PetsJCEntities();
-            var info = (from sp6 in contexto.sp_anularf(idFac) select sp6).ToList();
+            var info = (from sp6 in contexto.sp_anularfac(idFac) select sp6).ToList();
             return info.AsQueryable();
         }//fin de Sp_AnularFactura
     }

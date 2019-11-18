@@ -252,6 +252,9 @@
   <Function Name="sp_anularf" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
     <Parameter Name="detalle" Type="int" Mode="In" />
   </Function>
+  <Function Name="sp_anularfac" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="detalle" Type="int" Mode="In" />
+  </Function>
   <Function Name="sp_AnularFactura" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
     <Parameter Name="detalle" Type="int" Mode="In" />
   </Function>

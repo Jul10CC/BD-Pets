@@ -150,5 +150,14 @@ namespace MODELS
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<sp_anularf_Result>("sp_anularf", detalleParameter);
         }
+    
+        public virtual ObjectResult<sp_anularfac_Result> sp_anularfac(Nullable<int> detalle)
+        {
+            var detalleParameter = detalle.HasValue ?
+                new ObjectParameter("detalle", detalle) :
+                new ObjectParameter("detalle", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<sp_anularfac_Result>("sp_anularfac", detalleParameter);
+        }
     }
 }
