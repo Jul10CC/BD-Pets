@@ -53,5 +53,19 @@ namespace DAL
             var listado4 = (from sp4 in contexto.sp_informe4(idFac) select sp4).ToList();
             return listado4.AsQueryable();
         }
+        public IQueryable Informe5(string factura)
+        {
+            int idFac = Convert.ToInt32(factura);
+            contexto = new PetsJCEntities();
+            var listado5 = (from sp5 in contexto.sp_informe5(idFac) select sp5).ToList();
+            return listado5.AsQueryable();
+        }
+        public IQueryable sp_anularfacturas(string factura)
+        {
+            int idFac = Convert.ToInt32(factura);
+            contexto = new PetsJCEntities();
+            var info = (from sp6 in contexto.sp_anularf(idFac) select sp6).ToList();
+            return info.AsQueryable();
+        }//fin de Sp_AnularFactura
     }
 }

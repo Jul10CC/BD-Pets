@@ -68,6 +68,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Mantenimientos\UserControlAnulacion.xaml.cs">
+      <DependentUpon>UserControlAnulacion.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Mantenimientos\UserControlFactura.xaml.cs">
       <DependentUpon>UserControlFactura.xaml</DependentUpon>
     </Compile>
@@ -89,6 +92,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Mantenimientos\UserControlAnulacion.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Mantenimientos\UserControlCategoria.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

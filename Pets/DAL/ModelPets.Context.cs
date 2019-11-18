@@ -114,5 +114,41 @@ namespace MODELS
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<sp_informe4_Result>("sp_informe4", detalleParameter);
         }
+    
+        public virtual ObjectResult<sp_informe5_Result> sp_informe5(Nullable<int> detalle)
+        {
+            var detalleParameter = detalle.HasValue ?
+                new ObjectParameter("detalle", detalle) :
+                new ObjectParameter("detalle", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<sp_informe5_Result>("sp_informe5", detalleParameter);
+        }
+    
+        public virtual int sp_AnularFactura(Nullable<int> detalle)
+        {
+            var detalleParameter = detalle.HasValue ?
+                new ObjectParameter("detalle", detalle) :
+                new ObjectParameter("detalle", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("sp_AnularFactura", detalleParameter);
+        }
+    
+        public virtual int sp_anularfacturas(Nullable<int> detalle)
+        {
+            var detalleParameter = detalle.HasValue ?
+                new ObjectParameter("detalle", detalle) :
+                new ObjectParameter("detalle", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("sp_anularfacturas", detalleParameter);
+        }
+    
+        public virtual ObjectResult<sp_anularf_Result> sp_anularf(Nullable<int> detalle)
+        {
+            var detalleParameter = detalle.HasValue ?
+                new ObjectParameter("detalle", detalle) :
+                new ObjectParameter("detalle", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<sp_anularf_Result>("sp_anularf", detalleParameter);
+        }
     }
 }

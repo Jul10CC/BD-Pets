@@ -70,6 +70,11 @@ namespace UI
                     GridPrincipal.Children.Add(new Mantenimientos.UserControlInformes());
                     LabelNombreInicio.Text = "Reportes";
                     break;
+                case 8:
+                    GridPrincipal.Children.Clear();
+                    GridPrincipal.Children.Add(new Mantenimientos.UserControlAnulacion());
+                    LabelNombreInicio.Text = "Anulacion de Factura";
+                    break;
                 default:
                     break;
             }

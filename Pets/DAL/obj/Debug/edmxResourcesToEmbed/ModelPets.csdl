@@ -352,6 +352,18 @@
     <FunctionImport Name="sp_informe4" ReturnType="Collection(PetsJCModel.sp_informe4_Result)">
       <Parameter Name="detalle" Mode="In" Type="Int32" />
     </FunctionImport>
+    <FunctionImport Name="sp_informe5" ReturnType="Collection(PetsJCModel.sp_informe5_Result)">
+      <Parameter Name="detalle" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_AnularFactura">
+      <Parameter Name="detalle" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_anularfacturas">
+      <Parameter Name="detalle" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_anularf" ReturnType="Collection(PetsJCModel.sp_anularf_Result)">
+      <Parameter Name="detalle" Mode="In" Type="Int32" />
+    </FunctionImport>
   </EntityContainer>
   <ComplexType Name="sp_Logueo_Result">
     <Property Type="String" Name="Username" Nullable="false" MaxLength="15" />
@@ -393,5 +405,19 @@
     <Property Type="Decimal" Name="Total" Nullable="false" Precision="18" Scale="0" />
     <Property Type="String" Name="Nombre" Nullable="false" MaxLength="20" />
     <Property Type="String" Name="Apellido" Nullable="false" MaxLength="20" />
+  </ComplexType>
+  <ComplexType Name="sp_informe5_Result">
+    <Property Type="Int32" Name="FacturaID" Nullable="false" />
+    <Property Type="DateTime" Name="Fecha_Factura" Nullable="false" Precision="23" />
+    <Property Type="Boolean" Name="Estado" Nullable="false" />
+    <Property Type="Decimal" Name="Total" Nullable="false" Precision="18" Scale="0" />
+    <Property Type="Int32" Name="Cantidad" Nullable="false" />
+    <Property Type="Decimal" Name="Precio" Nullable="false" Precision="18" Scale="0" />
+  </ComplexType>
+  <ComplexType Name="sp_anularf_Result">
+    <Property Type="Int32" Name="FacturaID" Nullable="false" />
+    <Property Type="DateTime" Name="Fecha_Factura" Nullable="false" Precision="23" />
+    <Property Type="Decimal" Name="Total" Nullable="false" Precision="18" Scale="0" />
+    <Property Type="Boolean" Name="Estado" Nullable="false" />
   </ComplexType>
 </Schema>

@@ -254,6 +254,15 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <Function Name="sp_anularf" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="detalle" Type="int" Mode="In" />
+        </Function>
+        <Function Name="sp_AnularFactura" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="detalle" Type="int" Mode="In" />
+        </Function>
+        <Function Name="sp_anularfacturas" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="detalle" Type="int" Mode="In" />
+        </Function>
         <Function Name="sp_informe1" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="FECHA_DESDE" Type="datetime" Mode="In" />
           <Parameter Name="FECHA_HASTA" Type="datetime" Mode="In" />
@@ -267,6 +276,9 @@
           <Parameter Name="FECHA_HASTA" Type="datetime" Mode="In" />
         </Function>
         <Function Name="sp_informe4" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="detalle" Type="int" Mode="In" />
+        </Function>
+        <Function Name="sp_informe5" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="detalle" Type="int" Mode="In" />
         </Function>
         <Function Name="sp_Logueo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
@@ -690,6 +702,18 @@
             <Parameter Name="FECHA_HASTA" Mode="In" Type="DateTime" />
           </FunctionImport>
           <FunctionImport Name="sp_informe4" ReturnType="Collection(PetsJCModel.sp_informe4_Result)">
+          <Parameter Name="detalle" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="sp_informe5" ReturnType="Collection(PetsJCModel.sp_informe5_Result)">
+          <Parameter Name="detalle" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="sp_AnularFactura">
+          <Parameter Name="detalle" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="sp_anularfacturas">
+          <Parameter Name="detalle" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="sp_anularf" ReturnType="Collection(PetsJCModel.sp_anularf_Result)">
             <Parameter Name="detalle" Mode="In" Type="Int32" />
           </FunctionImport>
         </EntityContainer>
@@ -733,6 +757,20 @@
           <Property Type="Decimal" Name="Total" Nullable="false" Precision="18" Scale="0" />
           <Property Type="String" Name="Nombre" Nullable="false" MaxLength="20" />
           <Property Type="String" Name="Apellido" Nullable="false" MaxLength="20" />
+        </ComplexType>
+        <ComplexType Name="sp_informe5_Result">
+          <Property Type="Int32" Name="FacturaID" Nullable="false" />
+          <Property Type="DateTime" Name="Fecha_Factura" Nullable="false" Precision="23" />
+          <Property Type="Boolean" Name="Estado" Nullable="false" />
+          <Property Type="Decimal" Name="Total" Nullable="false" Precision="18" Scale="0" />
+          <Property Type="Int32" Name="Cantidad" Nullable="false" />
+          <Property Type="Decimal" Name="Precio" Nullable="false" Precision="18" Scale="0" />
+        </ComplexType>
+        <ComplexType Name="sp_anularf_Result">
+          <Property Type="Int32" Name="FacturaID" Nullable="false" />
+          <Property Type="DateTime" Name="Fecha_Factura" Nullable="false" Precision="23" />
+          <Property Type="Decimal" Name="Total" Nullable="false" Precision="18" Scale="0" />
+          <Property Type="Boolean" Name="Estado" Nullable="false" />
         </ComplexType>
       </Schema>
     </edmx:ConceptualModels>
@@ -935,6 +973,30 @@
                 <ScalarProperty Name="Total" ColumnName="Total" />
                 <ScalarProperty Name="Nombre" ColumnName="Nombre" />
                 <ScalarProperty Name="Apellido" ColumnName="Apellido" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="sp_informe5" FunctionName="PetsJCModel.Store.sp_informe5">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="PetsJCModel.sp_informe5_Result">
+                <ScalarProperty Name="FacturaID" ColumnName="FacturaID" />
+                <ScalarProperty Name="Fecha_Factura" ColumnName="Fecha_Factura" />
+                <ScalarProperty Name="Estado" ColumnName="Estado" />
+                <ScalarProperty Name="Total" ColumnName="Total" />
+                <ScalarProperty Name="Cantidad" ColumnName="Cantidad" />
+                <ScalarProperty Name="Precio" ColumnName="Precio" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="sp_AnularFactura" FunctionName="PetsJCModel.Store.sp_AnularFactura" />
+          <FunctionImportMapping FunctionImportName="sp_anularfacturas" FunctionName="PetsJCModel.Store.sp_anularfacturas" />
+          <FunctionImportMapping FunctionImportName="sp_anularf" FunctionName="PetsJCModel.Store.sp_anularf">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="PetsJCModel.sp_anularf_Result">
+                <ScalarProperty Name="FacturaID" ColumnName="FacturaID" />
+                <ScalarProperty Name="Fecha_Factura" ColumnName="Fecha_Factura" />
+                <ScalarProperty Name="Total" ColumnName="Total" />
+                <ScalarProperty Name="Estado" ColumnName="Estado" />
               </ComplexTypeMapping>
             </ResultMapping>
           </FunctionImportMapping>

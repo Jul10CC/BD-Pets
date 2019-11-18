@@ -46,6 +46,7 @@
     <Compile Include="ClassConsultas.cs" />
     <Compile Include="ClassEmpleado.cs" />
     <Compile Include="ClassEmpleadoCargo.cs" />
+    <Compile Include="ClassFactura.cs" />
     <Compile Include="ClassProductos.cs" />
     <Compile Include="ClassUsuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

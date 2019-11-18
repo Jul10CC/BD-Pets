@@ -180,9 +180,9 @@ VerticalAlignment="Center" Margin="20 0"/>
                 <!--Informe4-->
                 <ListViewItem Height="60">
                     <StackPanel Orientation="Horizontal">
-                        <materialDesign:PackIcon Kind="CardMembership" Width="30"
+                        <materialDesign:PackIcon Kind="SignalCellularNoSim" Width="30"
 Height="30" VerticalAlignment="Center" Margin="5"/>
-                        <TextBlock Text="Factura" FontSize="17"
+                        <TextBlock Text="Anulacion de Factura" FontSize="17"
 VerticalAlignment="Center" Margin="20 0"/>
                     </StackPanel>
                 </ListViewItem>

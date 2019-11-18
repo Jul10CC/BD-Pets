@@ -199,5 +199,29 @@
         </ComplexTypeMapping>
       </ResultMapping>
     </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_informe5" FunctionName="PetsJCModel.Store.sp_informe5">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="PetsJCModel.sp_informe5_Result">
+          <ScalarProperty Name="FacturaID" ColumnName="FacturaID" />
+          <ScalarProperty Name="Fecha_Factura" ColumnName="Fecha_Factura" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="Cantidad" ColumnName="Cantidad" />
+          <ScalarProperty Name="Precio" ColumnName="Precio" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_AnularFactura" FunctionName="PetsJCModel.Store.sp_AnularFactura" />
+    <FunctionImportMapping FunctionImportName="sp_anularfacturas" FunctionName="PetsJCModel.Store.sp_anularfacturas" />
+    <FunctionImportMapping FunctionImportName="sp_anularf" FunctionName="PetsJCModel.Store.sp_anularf">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="PetsJCModel.sp_anularf_Result">
+          <ScalarProperty Name="FacturaID" ColumnName="FacturaID" />
+          <ScalarProperty Name="Fecha_Factura" ColumnName="Fecha_Factura" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
   </EntityContainerMapping>
 </Mapping>

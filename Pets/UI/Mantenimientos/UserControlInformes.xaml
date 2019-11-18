@@ -7,7 +7,7 @@
              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
              mc:Ignorable="d" 
              d:DesignHeight="600" d:DesignWidth="700">
-    <Grid  Background="#FFFAF9" HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="0,0,-39,-36" Width="739">
+    <Grid  Background="#FFFAF9" HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="0,0,0,-36" Width="700">
         <Rectangle HorizontalAlignment="Left" Height="194" Margin="11,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="669"/>
         <Label x:Name="labelFecha1" Content="Fecha Inicio:" HorizontalAlignment="Left" Margin="46,40,0,0" VerticalAlignment="Top" Foreground="#0260AA" FontWeight="Bold" FontFamily="Tahoma"/>
         <DatePicker HorizontalAlignment="Left" x:Name="dateFecha1" Margin="163,40,0,0" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.519,0.952"/>

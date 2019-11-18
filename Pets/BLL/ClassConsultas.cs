@@ -39,5 +39,15 @@ namespace BLL
             ClassTSQL Lg = new ClassTSQL();
             return Lg.Informe4(factura);
         }
+        public IEnumerable sp_informe5(string factura)
+        {
+            ClassTSQL Lg = new ClassTSQL();
+            return Lg.Informe5(factura);
+        }
+        public IEnumerable sp_anularfacturas(string  id)
+        {
+            ClassTSQL Lg = new ClassTSQL();
+            return Lg.sp_anularfacturas(id);
+        }//fin SP_AnularFactura
     }
 }
